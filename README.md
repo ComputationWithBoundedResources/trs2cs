@@ -30,23 +30,23 @@ $ trs2cs jones1.trs
    (cons (var x) (var a)))
   1))
 (>=
- (r1 (empty ()) (var a))
+ (r1 (empty) (var a))
  (+ (var a) 1))
 (>=
  (rev (var ls))
- (+ (r1 (var ls) (empty ())) 1))
+ (+ (r1 (var ls) (empty)) 1))
 (>=
  (cons (var _x1) (var _x2))
  0)
-(>= (empty ()) 0)
+(>= (empty) 0)
 (>= (r1 (var _x1) (var _x2)) 0)
 (>= (rev (var _x1)) 0)
 (>=
  (+
   (+ (var _x1) (var _x2))
-  (_f1 ()))
+  (_f1))
  (cons (var _x1) (var _x2)))
-(>= (_f2 ()) (empty ()))
+(>= (_f2) (empty))
 
 $ #run gubs-0.3.0.0 to generate a polynomial interpretation
 $ gubs <(trs2cs jones1.trs)
@@ -68,4 +68,3 @@ $ git clone http://github.com/ComputationWithBoundedResources/trs2cs \
   && cd trs2cs \
   && STACK_YAML=stack-head.yaml stack build trs2cs
 ```
-
