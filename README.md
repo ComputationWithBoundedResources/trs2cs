@@ -64,6 +64,8 @@ rev(x0) = 2 + 2*x0;
 The recommended way to install `trs2cs` is via [`stack`](http://haskellstack.org).
 
 ```bash
-$ git clone http://github.com/ComputationWithBoundedResources/trs2cs && STACK_YAML=stack-head.yaml stack build
+$ git clone http://github.com/ComputationWithBoundedResources/trs2cs \
+  && cd trs2cs \
+  && STACK_YAML=stack-head.yaml stack build trs2cs
 ```
 

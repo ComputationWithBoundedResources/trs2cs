@@ -1,8 +1,7 @@
 name:                trs2cs
 version:             0.0.0.0
 -- synopsis:
-description:         
-  Converts Term Rewriting Systems to Constraints Systems
+-- description:         
 homepage:            https://github.com/ComputationWithBoundedResources/trs2cs#readme
 license:             BSD3
 license-file:        LICENSE
@@ -19,13 +18,8 @@ executable trs2cs
   main-is:             Main.hs
   ghc-options:         -Wall -threaded -rtsopts
   build-depends:       
-    base
-    , containers
-    , mtl
-
-    , term-rewriting
-    , tct-trs
-    , gubs
+    base, containers, mtl,
+    term-rewriting, tct-trs, gubs
   default-language:    Haskell2010
 
 source-repository head
