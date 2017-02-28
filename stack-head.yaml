@@ -1,0 +1,37 @@
+resolver:
+  lts-5.10
+packages:
+  - '.'
+  - location:
+      git: https://github.com/ComputationWithBoundedResources/slogic
+      commit: b5f1738b17637923318e793d68fdccb69749a0b8
+  - location:
+      git: https://github.com/ComputationWithBoundedResources/term-rewriting-xml
+      commit: termcomp2015
+  - location:
+      git: https://github.com/ComputationWithBoundedResources/tct-core
+      commit: 6704baf6902fe306bd47ade31f1adb1dc001ef4a
+  - location:
+      git: https://github.com/ComputationWithBoundedResources/tct-common
+      commit: f950378c5ba414f5f02916046ddcb4af4ec6fb19
+  - location:
+      git: https://github.com/ComputationWithBoundedResources/tct-trs
+      commit: termcomp2016
+  - location:
+      git: https://github.com/ComputationWithBoundedResources/gubs
+      commit: bed38ac1635bffca9391aa5814f0a09aefb92ec5
+  - location:
+      git: https://github.com/mzini/monad-trace
+      commit: 64ac8dc558e62b82711148f0570b6f12c3b14f0a
+extra-deps:
+  - smtlib2-1.0
+  - smtlib2-pipe-1.0
+  - smtlib2-debug-1.0
+  - atto-lisp-0.2.2.2
+  - data-fix-0.0.3
+  - fgl-visualize-0.1.0.1
+  - term-rewriting-0.2
+  - dotgen-0.4.2
+  - union-find-array-0.1.0.2
+allow-newer:
+  true

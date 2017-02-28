@@ -1,0 +1,23 @@
+resolver:
+  lts-5.10
+packages:
+  - '.'
+  - '../gubs'
+  - '../monad-trace'
+  - '../tct-bundle/slogic'
+  - '../tct-bundle/tct-core'
+  - '../tct-bundle/tct-common'
+  - '../tct-bundle/tct-trs'
+  - '../tct-bundle/term-rewriting-xml'
+extra-deps:
+  - smtlib2-1.0
+  - smtlib2-pipe-1.0
+  - smtlib2-debug-1.0
+  - atto-lisp-0.2.2.2
+  - data-fix-0.0.3
+  - fgl-visualize-0.1.0.1
+  - term-rewriting-0.2
+  - dotgen-0.4.2
+  - union-find-array-0.1.0.2
+allow-newer:
+  true
